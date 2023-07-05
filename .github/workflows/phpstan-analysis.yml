@@ -1,0 +1,9 @@
+name: phpstan-analysis
+run-name: ${{ github.actor }} is running phpstan
+on: [push]
+jobs:
+  start-phpstan:
+    runs-on: ubuntu-latest      
+    steps:
+        - uses: actions/checkout@v3
+        - run: .\vendor\bin\phpstan analyse . --level 1
