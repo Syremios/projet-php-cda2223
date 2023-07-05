@@ -2,7 +2,7 @@ name: phpstan-analysis
 run-name: ${{ github.actor }} is running phpstan
 on: [push]
 jobs:
-  start-phpstan:
+  test:
     runs-on: ubuntu-latest      
     steps:
         - uses: actions/checkout@v3
@@ -10,4 +10,14 @@ jobs:
           uses: shivammathur/setup-php@v2
           with:
             php-version: 8.1
-        - run:  php ./vendor/bin/phpstan analyse projet --level 1
+        - name: run phpstan
+          run:  php ./vendor/bin/phpstan analyse projet --level 1
+  build:
+    runs-on: ubuntu-latest      
+    steps:
+      - run: echo "Build app image"
+
+  deploy:
+    runs-on: ubuntu-latest      
+    steps:
+      - run: echo "Deploy project"
