@@ -3,8 +3,9 @@ run-name: ${{ github.actor }} is running phpstan
 on: [push]
 jobs:
   start-phpstan:
-    runs-on: windows-2022      
+    runs-on: ubuntu-latest      
     steps:
         - uses: actions/checkout@v3
         - uses: php-actions/composer@v6
-        - run: .\vendor\bin\phpstan analyse . --level 1
+        - run: echo $PATH
+        - run:  $PATH\vendor\bin\phpstan analyse . --level 1
