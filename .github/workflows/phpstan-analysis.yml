@@ -13,13 +13,13 @@ jobs:
         - name: run phpstan
           run:  php ./vendor/bin/phpstan analyse projet --level 1
   build:
-    need: test 
+    needs: test 
     runs-on: ubuntu-latest      
     steps:
       - run: echo "Build app image"
 
   deploy:
-    need: [test,build] 
+    needs: build 
     runs-on: ubuntu-latest      
     steps:
       - run: echo "Deploy project"
