@@ -38,7 +38,7 @@ jobs:
             context: .
             file: ./Dockerfile
             push: true
-            tags: ${{ github.actor }}/app
+            tags: syremios/app
 
   deploy:
     needs: build 
