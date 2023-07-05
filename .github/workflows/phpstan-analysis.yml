@@ -7,5 +7,4 @@ jobs:
     steps:
         - uses: actions/checkout@v3
         - uses: php-actions/composer@v6
-        - run: echo $PATH
-        - run:  $PATH\vendor\bin\phpstan analyse . --level 1
+        - run: .\vendor\bin\phpstan analyse . --level 1
