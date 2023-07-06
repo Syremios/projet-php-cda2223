@@ -1,24 +1,24 @@
 <a name="unreleased"></a>
 ## [Unreleased]
 
-### Feat
+### Features
 - changelog
 
 
 <a name="1.0.2"></a>
 ## [1.0.2] - 2023-07-06
-### Feat
-- ajout d'un fichier sql initialisant la table email
-- githubtoken
-
-### Fix
+### Bug Fixes
 - Faire en sorte que les coordonnées de la base de donnée est sur le fichier .env
 - Ajout du fichier de version de l'app
 - Ajout du fichier de version de l'app
 - bdd ip adresse changes
 
-### Refactor
+### Code Refactoring
 - changement dans le workflow
+
+### Features
+- ajout d'un fichier sql initialisant la table email
+- githubtoken
 
 
 <a name="1.0.1"></a>
