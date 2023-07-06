@@ -2,7 +2,17 @@
 ## [Unreleased]
 
 ### Feat
+- ajout d'un fichier sql initialisant la table email
 - githubtoken
+
+### Fix
+- Faire en sorte que les coordonnées de la base de donnée est sur le fichier .env
+- Ajout du fichier de version de l'app
+- Ajout du fichier de version de l'app
+- bdd ip adresse changes
+
+### Refactor
+- changement dans le workflow
 
 
 <a name="1.0.1"></a>
