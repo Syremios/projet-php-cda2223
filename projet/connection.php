@@ -1,8 +1,8 @@
  <?php
-$servername = "SimpleAppBDDAymeric"; // Server name where the app has the DB
-$username = "root"; // user of the DB 
-$password = "root"; // password of the DB
-$dbname = "mono"; // DB name 
+$servername = $_ENV['MYSQL_SERVERNAME']; // Server name where the app has the DB
+$username = $_ENV['MYSQL_USER']; // user of the DB 
+$password = $_ENV['MYSQL_PASSWORD']; // password of the DB
+$dbname = $_ENV['MYSQL_DB']; // DB name 
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
