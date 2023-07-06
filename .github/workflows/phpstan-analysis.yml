@@ -1,6 +1,9 @@
 name: phpstan-analysis
 run-name: ${{ github.actor }} is running phpstan
-on: [push]
+on:
+  push:
+    branches:
+      - main
 jobs:
   test:
     runs-on: ubuntu-latest    
